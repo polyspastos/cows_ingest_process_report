@@ -4,7 +4,7 @@ from sqlalchemy import (
     Float,
     DateTime,
     ForeignKey,
-)  # Change Date to DateTime
+)
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
 import uuid
@@ -61,7 +61,7 @@ class MilkProduction(Base):
 
     id = Column(
         String, primary_key=True, default=lambda: str(uuid.uuid4())
-    )  # Added a primary key for MilkProduction
+    )
     cow_id = Column(String, ForeignKey("cows.id"), nullable=False)
     timestamp = Column(DateTime, nullable=False)
     value = Column(Float, nullable=False)
@@ -72,7 +72,7 @@ class Weight(Base):
 
     id = Column(
         String, primary_key=True, default=lambda: str(uuid.uuid4())
-    )  # Added a primary key for Weight
+    )
     cow_id = Column(String, ForeignKey("cows.id"), nullable=False)
     timestamp = Column(DateTime, nullable=False)
     value = Column(Float, nullable=False)

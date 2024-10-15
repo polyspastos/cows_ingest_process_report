@@ -207,7 +207,6 @@ async def ingest_data(base_url: str):
                 batch = measurements_df.iloc[i : i + batch_size]
                 logger.info(f"Processing measurement batch {i//batch_size + 1}")
                 await process_measurement_batch(session, base_url, batch)
-                # await asyncio.sleep(0.4)
 
     except Exception as e:
         logger.error(f"An error occurred: {str(e)}")
