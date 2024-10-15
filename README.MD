@@ -5,8 +5,8 @@ python 3.12
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/cowshed-automation.git
-   cd cowshed-automation
+   git clone git@github.com:polyspastos/nn_ha.git
+   cd nn_ha
    ```
 
 2. Create a virtual environment:
@@ -45,6 +45,11 @@ python 3.12
 3. Generate a report:
    ```
    python -m app.reporting
+   ```
+
+   or use the api endpoint
+   ```
+   /cows/report
    ```
 
 4. Access the API documentation:
