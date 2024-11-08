@@ -1,3 +1,4 @@
+A flaskapi implementation of a parquet ingestion - data processing - reporting pipeline
 
 ## Setup
 
