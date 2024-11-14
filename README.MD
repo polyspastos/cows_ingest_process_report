@@ -6,7 +6,7 @@ python 3.12
 
 1. Clone the repository:
    ```
-   git clone git@github.com:polyspastos/nn_ha.git
+   git clone git@github.com:polyspastos/cows_ingest_process_report.git
    cd nn_ha
    ```
 
